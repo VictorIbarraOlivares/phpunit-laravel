@@ -13,7 +13,7 @@ class ProfileTest extends TestCase
     public function test_upload()
     {
         Storage::fake('local');
-        $response = $this->post('profiles', [
+        $response = $this->post('profile', [
             'photo' => $photo = UploadedFile::fake()->image('photo.png')
         ]);
 
